@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.heading {
+  background: -webkit-linear-gradient(90deg, #000000 0%, #afafaf 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.MuiDialog-paperScrollPaper {
+  background: linear-gradient(135deg, #fa3a25 0.59%, #b5e02c 100%);
+  width: 453px;
+  overflow-y: hidden;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 30px !important;
+  padding: 4px;
+  z-index: 10000000 !important;
+}
+.dialoge__content__section {
+  background: linear-gradient(0deg, #fa3a25 0%, #b5e02c 100%);
+  border-radius: 30px;
+  width: 100%;
+  height: 100%;
+  z-index: 10000000 !important;
+}
+@keyframes bnbbox {
+  from {
+    left: -300px;
+  }
+  to {
+    left: 0px;
+  }
+}
+@keyframes ulmbox {
+  from {
+    right: -300px;
+  }
+  to {
+    right: 0px;
+  }
+}
+@keyframes fadeIn {
+  20% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes zoomIn {
+  from {
+    top: -50px;
+  }
+  to {
+    top: 0px;
+  }
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+@media screen and (max-width: 544px) {
+  .MuiDialog-paperScrollPaper {
+    width: 100%;
+  }
+}
